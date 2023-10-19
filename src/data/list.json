@@ -8,7 +8,7 @@
   {
     "id": 2,
     "img": "/images/shoes2.png",
-    "description": "The right shoes can make everything different",
+    "description": "Right shoes can make you happy",
     "price": "PHP 1599"
   },
   {
@@ -32,13 +32,13 @@
   {
     "id": 6,
     "img": "/images/shoes6.png",
-    "description": "You should still wear good shoes even if your feet were made of gold.",
+    "description": "You should still wear good shoes .",
     "price": "PHP 4399"
   },
   {
     "id": 7,
     "img": "/images/shoes7.png",
-    "description": "Sometimes that's all you get out of life. Great shoes.",
+    "description": "Great shoes equals great experience.",
     "price": "PHP 2199"
   },
   {

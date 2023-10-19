@@ -6,7 +6,7 @@ import "../style/about.scss";
 export function about() {
   const [pic, setPic] = useState("/images/red_shoes1.png");
   return (
-    <div className="h-screen bg-about-hero bg-contain">
+    <div className="bg-about-hero bg-contain">
       <div className="flex items-center justify-center">
         <h1 className="py-5 text-3xl font-bold text-violet-500 md:text-5xl">
           WEB ABOUT

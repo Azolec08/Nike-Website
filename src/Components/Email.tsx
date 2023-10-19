@@ -1,5 +1,14 @@
+import { useRef } from "react";
 import EmailJs from "@emailjs/browser";
+
 const ContactForm: React.FC = () => {
+  const useRef1 = useRef<HTMLInputElement | null>(null);
+  const useRef2 = useRef<HTMLInputElement | null>(null);
+  const useRef3 = useRef<HTMLInputElement | null>(null);
+  const useRef4 = useRef<HTMLInputElement | null>(null);
+  const useRef5 = useRef<HTMLInputElement | null>(null);
+  const useRef6 = useRef<HTMLInputElement>(null);
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     EmailJs.sendForm(
@@ -8,6 +17,22 @@ const ContactForm: React.FC = () => {
       e.target,
       "SxKVMTKVEpiQa0iV0"
     );
+
+    if (useRef1.current) {
+      useRef1.current.value = "";
+    }
+    if (useRef2.current) {
+      useRef2.current.value = "";
+    }
+    if (useRef3.current) {
+      useRef3.current.value = "";
+    }
+    if (useRef4.current) {
+      useRef4.current.value = "";
+    }
+    if (useRef5.current) {
+      useRef5.current.value = "";
+    }
   };
 
   return (
@@ -20,6 +45,7 @@ const ContactForm: React.FC = () => {
               type="text"
               id="name"
               name="name"
+              ref={useRef1}
               className="w-full border border-gray-300 rounded p-2"
               placeholder="First Name"
               required
@@ -31,6 +57,7 @@ const ContactForm: React.FC = () => {
               type="text"
               id="surname"
               name="surname"
+              ref={useRef2}
               className="w-full border border-gray-300 rounded p-2"
               placeholder="Last Name"
               required
@@ -42,6 +69,7 @@ const ContactForm: React.FC = () => {
             type="tel"
             id="phone"
             name="phone"
+            ref={useRef3}
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Phone"
             required
@@ -53,6 +81,7 @@ const ContactForm: React.FC = () => {
             type="email"
             id="email"
             name="email"
+            ref={useRef4}
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Email"
             required
@@ -63,6 +92,7 @@ const ContactForm: React.FC = () => {
             type="text"
             id="address"
             name="address"
+            ref={useRef5}
             className="w-full border border-gray-300 rounded p-2"
             placeholder="Full Address"
             required
@@ -80,11 +110,13 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className="flex items-center gap-3">
-          <input
+          <button
             type="submit"
             value="send"
             className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 w-28 transition duration-200"
-          />
+          >
+            SEND
+          </button>
 
           <a href="">
             <img className="w-7" src="/images/facebook.png" alt="" />

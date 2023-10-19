@@ -18,7 +18,7 @@ function Footer() {
             <HouseIcon className="text-white" />
             <p className="text-sm">Binangonan Rizal</p>
           </span>
-          <span className="flex">
+          <span className="flex my-1">
             <PhoneIcon className="text-white" />
             <p className="text-sm">+699306206963</p>
           </span>
@@ -62,7 +62,7 @@ function Footer() {
         "
         >
           <h1 className="text-lg font-semibold">Follow Us</h1>
-          <div className="flex">
+          <div className="flex mt-2">
             <span className="flex">
               <a href="">
                 <img className="w-4" src="/images/facebook.png" alt="" />

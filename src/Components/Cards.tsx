@@ -34,7 +34,7 @@ const store = ({ img, description, price }: allCards) => {
           <FavoriteIcon className="i_con cursor-pointer text-violet-500 hover:text-red-500" />
         </div>
         <div className="flex justify-center">
-          <img src={img} alt="" className="w-28 my-8 " />
+          <img src={img} alt="" className="w-20 my-8 " />
         </div>
         <div className="flex flex-col items-center mb-1">
           <span className="text-3xl font-bold">NIKE</span>

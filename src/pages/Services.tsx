@@ -1,7 +1,7 @@
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import SyncIcon from "@mui/icons-material/Sync";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import Email from "../Components/email";
+import EmailCom from "../Components/Email";
 
 function Services() {
   return (
@@ -67,7 +67,7 @@ function Services() {
             <img className="w-80 lg:w-3/5" src="./images/logshoes.png" alt="" />
           </div>
           <div className="flex justify-center items-center">
-            <Email />
+            <EmailCom />
           </div>
         </div>
       </div>
