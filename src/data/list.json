@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "/images/shoes1.png",
+    "description": "Good shoes take you good places",
+    "price": "PHP 2399"
+  },
+  {
+    "id": 2,
+    "img": "/images/shoes2.png",
+    "description": "The right shoes can make everything different",
+    "price": "PHP 1599"
+  },
+  {
+    "id": 3,
+    "img": "/images/shoes3.png",
+    "description": "One shoe can change your life.",
+    "price": "PHP 1999"
+  },
+  {
+    "id": 4,
+    "img": "/images/shoes4.png",
+    "description": "You have big shoes to fill.",
+    "price": "PHP 2399"
+  },
+  {
+    "id": 4,
+    "img": "/images/shoes5.png",
+    "description": "you start with the shoes.",
+    "price": "PHP 5399"
+  },
+  {
+    "id": 6,
+    "img": "/images/shoes6.png",
+    "description": "You should still wear good shoes even if your feet were made of gold.",
+    "price": "PHP 4399"
+  },
+  {
+    "id": 7,
+    "img": "/images/shoes7.png",
+    "description": "Sometimes that's all you get out of life. Great shoes.",
+    "price": "PHP 2199"
+  },
+  {
+    "id": 8,
+    "img": "/images/shoes8.png",
+    "description": "I deserve new shoes.",
+    "price": "PHP 3399"
+  }
+]
