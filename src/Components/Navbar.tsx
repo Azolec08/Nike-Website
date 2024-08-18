@@ -133,10 +133,7 @@ function ResponsiveAppBar() {
             SHoes
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <div
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "inline-flex" }}
-            >
+            <div onClick={handleCloseNavMenu}>
               <ul className="flex  gap-x-5 ">
                 <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/">Home</Link>
