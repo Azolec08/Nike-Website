@@ -1,19 +1,18 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import { Link } from "react-router-dom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import AppBar from "@mui/material/AppBar";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
+import { Link } from "react-router-dom";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -134,28 +133,28 @@ function ResponsiveAppBar() {
             SHoes
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button
+            <div
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "inline-flex" }}
             >
-              <ul className="flex gap-3 ">
-                <li className="flex justify-around">
+              <ul className="flex  gap-x-5 ">
+                <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/">Home</Link>
                 </li>
-                <li className="flex justify-around">
+                <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/Store">Store</Link>
                 </li>
-                <li className="flex justify-around">
+                <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/About">About</Link>
                 </li>
-                <li>
+                <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/review">Review</Link>
                 </li>
-                <li>
+                <li className="flex justify-around hover:text-blue-400 transition">
                   <Link to="/services">Services</Link>
                 </li>
               </ul>
-            </Button>
+            </div>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
