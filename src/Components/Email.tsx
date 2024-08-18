@@ -1,5 +1,5 @@
-import { useRef } from "react";
 import EmailJs from "@emailjs/browser";
+import { useRef } from "react";
 
 const ContactForm: React.FC = () => {
   const useRef1 = useRef<HTMLInputElement | null>(null);
@@ -7,14 +7,13 @@ const ContactForm: React.FC = () => {
   const useRef3 = useRef<HTMLInputElement | null>(null);
   const useRef4 = useRef<HTMLInputElement | null>(null);
   const useRef5 = useRef<HTMLInputElement | null>(null);
-  const useRef6 = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     EmailJs.sendForm(
       "service_vhfxo88",
       "template_w3g1srl",
-      e.target,
+      e.currentTarget,
       "SxKVMTKVEpiQa0iV0"
     );
 
